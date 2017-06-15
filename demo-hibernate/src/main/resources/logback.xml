@@ -1,0 +1,24 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%thread] %-5level %logger- %msg%n</pattern>
+    </encoder>
+  </appender>
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>demo.log</file>
+    <encoder>
+      <pattern>[%thread] %-5level %logger - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="org.hibernate.SQL" level="debug">
+    <appender-ref ref="FILE" />
+  </logger>
+  <logger name="org.hibernate.type" level="trace">
+    <appender-ref ref="FILE" />
+  </logger>
+
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
