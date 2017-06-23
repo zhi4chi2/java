@@ -9,25 +9,21 @@
 
   <name>demo-flyway</name>
 
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.flywaydb</groupId>
-        <artifactId>flyway-maven-plugin</artifactId>
-        <version>4.2.0</version>
-        <configuration>
-          <url>jdbc:postgresql://localhost:5432/test</url>
-          <user>postgres</user>
-          <password>postgres</password>
-        </configuration>
-        <dependencies>
-          <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>9.4.1212</version>
-          </dependency>
-        </dependencies>
-      </plugin>
-    </plugins>
-  </build>
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>4.3.9.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.flywaydb</groupId>
+      <artifactId>flyway-core</artifactId>
+      <version>4.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.4.1212</version>
+    </dependency>
+  </dependencies>
 </project>
