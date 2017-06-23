@@ -1,4 +1,4 @@
-package org.example;
+package org.example.demo;
 
 import com.p6spy.engine.common.P6Util;
 import com.p6spy.engine.spy.appender.MessageFormattingStrategy;
