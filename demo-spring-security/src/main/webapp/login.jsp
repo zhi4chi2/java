@@ -18,7 +18,7 @@
     <table>
       <tr>
         <td>User:</td>
-        <td><input type='text' name='username' value='<c:if test="${not empty param.login_error}"><c:out value="${SPRING_SECURITY_LAST_USERNAME}"/></c:if>' /></td>
+        <td><input type='text' name='username' /></td>
       </tr>
       <tr>
         <td>Password:</td>
